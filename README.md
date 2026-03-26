@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<h1 align="center">Hi 👋, I'm Sanowar Ahmed</h1>
+<h1 align="center">Hi 👋, I'm Sanowar Hussain</h1>
 <h3 align="center">🚀 Cybersecurity Enthusiast | Python Developer | OSINT Explorer</h3>
 
 <p align="center">
