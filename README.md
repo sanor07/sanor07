@@ -66,7 +66,6 @@
 </p>
 
 ---
-
 ## 💡 Current Focus
 - Improving **ReconX OSINT Tool**  
 - Learning advanced networking concepts  
