@@ -73,7 +73,6 @@
 - Exploring real-world security scenarios  
 
 ---
-
 ## 🧩 Quote
 <p align="center">
   <i>"Understand the system before you try to secure it."</i>
