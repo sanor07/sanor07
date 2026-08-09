@@ -1,0 +1,531 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#070C12"/>
+    <stop offset="0.5" stop-color="#0D1720"/>
+    <stop offset="1" stop-color="#08151A"/>
+  </linearGradient>
+
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#FFFFFF" stop-opacity="0.14"/>
+    <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.035"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.075"/>
+  </linearGradient>
+
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#86EFAC"/>
+    <stop offset="0.5" stop-color="#22C55E"/>
+    <stop offset="1" stop-color="#15803D"/>
+  </linearGradient>
+
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#67E8F9"/>
+    <stop offset="1" stop-color="#0891B2"/>
+  </linearGradient>
+
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#22C55E" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#22C55E" stop-opacity="0.8"/>
+    <stop offset="1" stop-color="#67E8F9" stop-opacity="0"/>
+  </linearGradient>
+
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="45"/>
+  </filter>
+
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+  </filter>
+
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+
+  <clipPath id="card">
+    <rect x="30" y="25" width="1140" height="380" rx="32"/>
+  </clipPath>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1200" height="430" rx="35" fill="url(#bg)"/>
+
+<!-- AMBIENT GLOW -->
+
+<circle
+  cx="170"
+  cy="90"
+  r="135"
+  fill="#22C55E"
+  opacity="0.10"
+  filter="url(#blur)"
+/>
+
+<circle
+  cx="1040"
+  cy="330"
+  r="140"
+  fill="#06B6D4"
+  opacity="0.10"
+  filter="url(#blur)"
+/>
+
+<!-- GLASS PANEL -->
+
+<rect
+  x="30"
+  y="25"
+  width="1140"
+  height="380"
+  rx="32"
+  fill="url(#glass)"
+  stroke="white"
+  stroke-opacity="0.13"
+  filter="url(#shadow)"
+/>
+
+<!-- GLASS REFLECTION -->
+
+<g clip-path="url(#card)">
+  <path
+    d="M0 35 L750 35 L500 210 L0 210 Z"
+    fill="white"
+    opacity="0.025"
+  />
+</g>
+
+<!-- TOP EDGE LIGHT -->
+
+<rect
+  x="100"
+  y="25"
+  width="1000"
+  height="2"
+  rx="1"
+  fill="url(#line)"
+/>
+
+<!-- SECURITY SHIELD -->
+
+<path
+  d="M105 62
+     L151 80
+     V111
+     C151 142 129 160 105 170
+     C81 160 59 142 59 111
+     V80
+     Z"
+  fill="#22C55E"
+  fill-opacity="0.07"
+  stroke="#22C55E"
+  stroke-opacity="0.35"
+  stroke-width="2"
+/>
+
+<path
+  d="M105 76
+     L137 89
+     V111
+     C137 132 123 145 105 153
+     C87 145 73 132 73 111
+     V89
+     Z"
+  stroke="#86EFAC"
+  stroke-opacity="0.6"
+  stroke-width="1.5"
+/>
+
+<path
+  d="M89 112
+     L100 123
+     L123 98"
+  stroke="#86EFAC"
+  stroke-width="4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+<!-- HEADER -->
+
+<text
+  x="175"
+  y="86"
+  fill="#86EFAC"
+  font-family="monospace"
+  font-size="13"
+  letter-spacing="4"
+>
+SECURITY LAB
+</text>
+
+<text
+  x="175"
+  y="123"
+  fill="white"
+  font-family="Arial, sans-serif"
+  font-size="34"
+  font-weight="700"
+>
+Wazuh Detection Lab
+</text>
+
+<text
+  x="175"
+  y="151"
+  fill="#9CA8B8"
+  font-family="Arial, sans-serif"
+  font-size="15"
+>
+Blue Team • SIEM • Detection Engineering
+</text>
+
+<!-- STATUS -->
+
+<rect
+  x="1000"
+  y="78"
+  width="125"
+  height="34"
+  rx="17"
+  fill="#22C55E"
+  fill-opacity="0.07"
+  stroke="#22C55E"
+  stroke-opacity="0.28"
+/>
+
+<circle
+  cx="1022"
+  cy="95"
+  r="5"
+  fill="#4ADE80"
+/>
+
+<text
+  x="1035"
+  y="100"
+  fill="#86EFAC"
+  font-family="monospace"
+  font-size="11"
+>
+ACTIVE
+</text>
+
+<!-- DIVIDER -->
+
+<line
+  x1="70"
+  y1="185"
+  x2="1130"
+  y2="185"
+  stroke="white"
+  stroke-opacity="0.08"
+/>
+
+<!-- ARCHITECTURE -->
+
+<text
+  x="70"
+  y="216"
+  fill="#697586"
+  font-family="monospace"
+  font-size="10"
+  letter-spacing="2"
+>
+LAB ARCHITECTURE
+</text>
+
+<!-- WINDOWS -->
+
+<rect
+  x="70"
+  y="235"
+  width="135"
+  height="48"
+  rx="14"
+  fill="#FFFFFF"
+  fill-opacity="0.035"
+  stroke="#67E8F9"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="137"
+  y="264"
+  text-anchor="middle"
+  fill="#67E8F9"
+  font-family="monospace"
+  font-size="11"
+>
+WINDOWS
+</text>
+
+<!-- SYSMON -->
+
+<rect
+  x="235"
+  y="235"
+  width="135"
+  height="48"
+  rx="14"
+  fill="#FFFFFF"
+  fill-opacity="0.035"
+  stroke="#C084FC"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="302"
+  y="264"
+  text-anchor="middle"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="11"
+>
+SYSMON
+</text>
+
+<!-- WAZUH -->
+
+<rect
+  x="400"
+  y="225"
+  width="155"
+  height="68"
+  rx="18"
+  fill="#22C55E"
+  fill-opacity="0.06"
+  stroke="#22C55E"
+  stroke-opacity="0.38"
+/>
+
+<text
+  x="477"
+  y="254"
+  text-anchor="middle"
+  fill="#86EFAC"
+  font-family="monospace"
+  font-size="13"
+  font-weight="700"
+>
+WAZUH
+</text>
+
+<text
+  x="477"
+  y="274"
+  text-anchor="middle"
+  fill="#64748B"
+  font-family="monospace"
+  font-size="9"
+>
+SIEM
+</text>
+
+<!-- UBUNTU -->
+
+<rect
+  x="585"
+  y="235"
+  width="135"
+  height="48"
+  rx="14"
+  fill="#FFFFFF"
+  fill-opacity="0.035"
+  stroke="#67E8F9"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="652"
+  y="264"
+  text-anchor="middle"
+  fill="#67E8F9"
+  font-family="monospace"
+  font-size="11"
+>
+UBUNTU
+</text>
+
+<!-- KALI -->
+
+<rect
+  x="750"
+  y="235"
+  width="135"
+  height="48"
+  rx="14"
+  fill="#FFFFFF"
+  fill-opacity="0.035"
+  stroke="#C084FC"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="817"
+  y="264"
+  text-anchor="middle"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="11"
+>
+KALI LINUX
+</text>
+
+<!-- CONNECTIONS -->
+
+<line
+  x1="205"
+  y1="259"
+  x2="235"
+  y2="259"
+  stroke="#94A3B8"
+  stroke-opacity="0.35"
+/>
+
+<line
+  x1="370"
+  y1="259"
+  x2="400"
+  y2="259"
+  stroke="#94A3B8"
+  stroke-opacity="0.35"
+/>
+
+<line
+  x1="555"
+  y1="259"
+  x2="585"
+  y2="259"
+  stroke="#94A3B8"
+  stroke-opacity="0.35"
+/>
+
+<line
+  x1="720"
+  y1="259"
+  x2="750"
+  y2="259"
+  stroke="#94A3B8"
+  stroke-opacity="0.35"
+/>
+
+<!-- DETECTION PANEL -->
+
+<text
+  x="925"
+  y="216"
+  fill="#697586"
+  font-family="monospace"
+  font-size="10"
+  letter-spacing="2"
+>
+DETECTION
+</text>
+
+<circle cx="935" cy="243" r="4" fill="#4ADE80"/>
+
+<text
+  x="950"
+  y="247"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+PowerShell
+</text>
+
+<circle cx="935" cy="270" r="4" fill="#67E8F9"/>
+
+<text
+  x="950"
+  y="274"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Process Monitoring
+</text>
+
+<circle cx="935" cy="297" r="4" fill="#C084FC"/>
+
+<text
+  x="950"
+  y="301"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Persistence
+</text>
+
+<circle cx="935" cy="324" r="4" fill="#4ADE80"/>
+
+<text
+  x="950"
+  y="328"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+File Integrity
+</text>
+
+<!-- LOWER DESCRIPTION -->
+
+<text
+  x="70"
+  y="325"
+  fill="#9CA8B8"
+  font-family="Arial, sans-serif"
+  font-size="13"
+>
+Practical SOC environment for testing alerts,
+</text>
+
+<text
+  x="70"
+  y="347"
+  fill="#9CA8B8"
+  font-family="Arial, sans-serif"
+  font-size="13"
+>
+detection rules and real-world attack scenarios.
+</text>
+
+<!-- FOOTER -->
+
+<line
+  x1="70"
+  y1="375"
+  x2="1130"
+  y2="375"
+  stroke="white"
+  stroke-opacity="0.06"
+/>
+
+<text
+  x="70"
+  y="393"
+  fill="#475569"
+  font-family="monospace"
+  font-size="9"
+>
+WAZUH / BLUE TEAM / SIEM / DETECTION ENGINEERING
+</text>
+
+<!-- OUTER BORDER -->
+
+<rect
+  x="1"
+  y="1"
+  width="1198"
+  height="428"
+  rx="35"
+  stroke="white"
+  stroke-opacity="0.04"
+/>
+
+</svg>
