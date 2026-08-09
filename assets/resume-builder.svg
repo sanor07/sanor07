@@ -1,0 +1,528 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#090B13"/>
+    <stop offset="0.5" stop-color="#151225"/>
+    <stop offset="1" stop-color="#0B1019"/>
+  </linearGradient>
+
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#FFFFFF" stop-opacity="0.14"/>
+    <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.035"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+  </linearGradient>
+
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#E9D5FF"/>
+    <stop offset="0.4" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#67E8F9"/>
+    <stop offset="1" stop-color="#06B6D4"/>
+  </linearGradient>
+
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#C084FC" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#C084FC" stop-opacity="0.85"/>
+    <stop offset="1" stop-color="#67E8F9" stop-opacity="0"/>
+  </linearGradient>
+
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="45"/>
+  </filter>
+
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+  </filter>
+
+  <clipPath id="card">
+    <rect x="30" y="25" width="1140" height="380" rx="32"/>
+  </clipPath>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1200" height="430" rx="35" fill="url(#bg)"/>
+
+<!-- AMBIENT GLOW -->
+
+<circle
+  cx="180"
+  cy="90"
+  r="130"
+  fill="#8B5CF6"
+  opacity="0.13"
+  filter="url(#blur)"
+/>
+
+<circle
+  cx="1040"
+  cy="330"
+  r="135"
+  fill="#06B6D4"
+  opacity="0.10"
+  filter="url(#blur)"
+/>
+
+<!-- GLASS PANEL -->
+
+<rect
+  x="30"
+  y="25"
+  width="1140"
+  height="380"
+  rx="32"
+  fill="url(#glass)"
+  stroke="white"
+  stroke-opacity="0.13"
+  filter="url(#shadow)"
+/>
+
+<!-- REFLECTION -->
+
+<g clip-path="url(#card)">
+  <path
+    d="M0 35 L760 35 L500 210 L0 210 Z"
+    fill="white"
+    opacity="0.025"
+  />
+</g>
+
+<!-- TOP EDGE -->
+
+<rect
+  x="100"
+  y="25"
+  width="1000"
+  height="2"
+  rx="1"
+  fill="url(#line)"
+/>
+
+<!-- DOCUMENT ICON -->
+
+<rect
+  x="64"
+  y="62"
+  width="82"
+  height="88"
+  rx="15"
+  fill="#C084FC"
+  fill-opacity="0.07"
+  stroke="#C084FC"
+  stroke-opacity="0.32"
+/>
+
+<path
+  d="M84 82
+     H126
+     M84 98
+     H126
+     M84 114
+     H116"
+  stroke="#C084FC"
+  stroke-width="3"
+  stroke-linecap="round"
+/>
+
+<path
+  d="M84 132
+     H105"
+  stroke="#67E8F9"
+  stroke-width="3"
+  stroke-linecap="round"
+/>
+
+<path
+  d="M119 62
+     V76
+     H133"
+  stroke="#67E8F9"
+  stroke-width="2"
+  opacity="0.7"
+/>
+
+<!-- HEADER -->
+
+<text
+  x="175"
+  y="86"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="13"
+  letter-spacing="4"
+>
+AI PROJECT
+</text>
+
+<text
+  x="175"
+  y="123"
+  fill="white"
+  font-family="Arial, sans-serif"
+  font-size="34"
+  font-weight="700"
+>
+AI Resume Builder
+</text>
+
+<text
+  x="175"
+  y="151"
+  fill="#9CA8B8"
+  font-family="Arial, sans-serif"
+  font-size="15"
+>
+ATS Resume Platform • AI Analysis • PDF Generation
+</text>
+
+<!-- STATUS -->
+
+<rect
+  x="1000"
+  y="78"
+  width="125"
+  height="34"
+  rx="17"
+  fill="#C084FC"
+  fill-opacity="0.07"
+  stroke="#C084FC"
+  stroke-opacity="0.25"
+/>
+
+<circle
+  cx="1022"
+  cy="95"
+  r="5"
+  fill="#FACC15"
+/>
+
+<text
+  x="1035"
+  y="100"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="11"
+>
+BUILDING
+</text>
+
+<!-- DIVIDER -->
+
+<line
+  x1="70"
+  y1="185"
+  x2="1130"
+  y2="185"
+  stroke="white"
+  stroke-opacity="0.08"
+/>
+
+<!-- DESCRIPTION -->
+
+<text
+  x="70"
+  y="218"
+  fill="#D1D5DB"
+  font-family="Arial, sans-serif"
+  font-size="15"
+>
+A full-stack resume platform designed to create,
+</text>
+
+<text
+  x="70"
+  y="243"
+  fill="#D1D5DB"
+  font-family="Arial, sans-serif"
+  font-size="15"
+>
+analyze and improve ATS-friendly professional resumes.
+</text>
+
+<!-- FEATURES -->
+
+<rect
+  x="70"
+  y="270"
+  width="105"
+  height="34"
+  rx="17"
+  fill="#C084FC"
+  fill-opacity="0.07"
+  stroke="#C084FC"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="122"
+  y="292"
+  text-anchor="middle"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="10"
+>
+ATS SCORE
+</text>
+
+<rect
+  x="185"
+  y="270"
+  width="100"
+  height="34"
+  rx="17"
+  fill="#67E8F9"
+  fill-opacity="0.07"
+  stroke="#67E8F9"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="235"
+  y="292"
+  text-anchor="middle"
+  fill="#67E8F9"
+  font-family="monospace"
+  font-size="10"
+>
+AI ANALYSIS
+</text>
+
+<rect
+  x="295"
+  y="270"
+  width="105"
+  height="34"
+  rx="17"
+  fill="#C084FC"
+  fill-opacity="0.07"
+  stroke="#C084FC"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="347"
+  y="292"
+  text-anchor="middle"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="10"
+>
+GENERATION
+</text>
+
+<rect
+  x="410"
+  y="270"
+  width="90"
+  height="34"
+  rx="17"
+  fill="#67E8F9"
+  fill-opacity="0.07"
+  stroke="#67E8F9"
+  stroke-opacity="0.22"
+/>
+
+<text
+  x="455"
+  y="292"
+  text-anchor="middle"
+  fill="#67E8F9"
+  font-family="monospace"
+  font-size="10"
+>
+PDF
+</text>
+
+<!-- STACK -->
+
+<text
+  x="70"
+  y="335"
+  fill="#697586"
+  font-family="monospace"
+  font-size="10"
+  letter-spacing="2"
+>
+STACK
+</text>
+
+<text
+  x="125"
+  y="335"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="12"
+>
+REACT • FASTAPI • PYTHON • SQLITE • OPENAI
+</text>
+
+<!-- RIGHT SIDE ATS PANEL -->
+
+<text
+  x="760"
+  y="216"
+  fill="#697586"
+  font-family="monospace"
+  font-size="10"
+  letter-spacing="2"
+>
+RESUME ANALYSIS
+</text>
+
+<!-- SCORE CIRCLE -->
+
+<circle
+  cx="850"
+  cy="282"
+  r="62"
+  stroke="white"
+  stroke-opacity="0.06"
+  stroke-width="9"
+/>
+
+<circle
+  cx="850"
+  cy="282"
+  r="62"
+  stroke="url(#purple)"
+  stroke-width="9"
+  stroke-linecap="round"
+  stroke-dasharray="292 390"
+  transform="rotate(-90 850 282)"
+/>
+
+<text
+  x="850"
+  y="278"
+  text-anchor="middle"
+  fill="white"
+  font-family="Arial, sans-serif"
+  font-size="28"
+  font-weight="700"
+>
+ATS
+</text>
+
+<text
+  x="850"
+  y="299"
+  text-anchor="middle"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="11"
+>
+READY
+</text>
+
+<!-- ANALYSIS ITEMS -->
+
+<circle cx="955" cy="244" r="4" fill="#4ADE80"/>
+
+<text
+  x="970"
+  y="248"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Keywords
+</text>
+
+<circle cx="955" cy="273" r="4" fill="#67E8F9"/>
+
+<text
+  x="970"
+  y="277"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Experience
+</text>
+
+<circle cx="955" cy="302" r="4" fill="#C084FC"/>
+
+<text
+  x="970"
+  y="306"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Skills
+</text>
+
+<circle cx="955" cy="331" r="4" fill="#4ADE80"/>
+
+<text
+  x="970"
+  y="335"
+  fill="#CBD5E1"
+  font-family="monospace"
+  font-size="11"
+>
+Formatting
+</text>
+
+<!-- PROGRESS -->
+
+<rect
+  x="760"
+  y="360"
+  width="370"
+  height="7"
+  rx="3.5"
+  fill="white"
+  fill-opacity="0.06"
+/>
+
+<rect
+  x="760"
+  y="360"
+  width="240"
+  height="7"
+  rx="3.5"
+  fill="url(#purple)"
+/>
+
+<text
+  x="1130"
+  y="367"
+  text-anchor="end"
+  fill="#C084FC"
+  font-family="monospace"
+  font-size="10"
+>
+65%
+</text>
+
+<!-- FOOTER -->
+
+<line
+  x1="70"
+  y1="390"
+  x2="1130"
+  y2="390"
+  stroke="white"
+  stroke-opacity="0.06"
+/>
+
+<!-- OUTER BORDER -->
+
+<rect
+  x="1"
+  y="1"
+  width="1198"
+  height="428"
+  rx="35"
+  stroke="white"
+  stroke-opacity="0.04"
+/>
+
+</svg>
