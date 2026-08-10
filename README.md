@@ -1,91 +1,79 @@
-<div align="center">
+<!-- PROJECT SHOWCASE -->
 
-<img src="./assets/hero.svg" width="100%">
+<h2 align="center">◈ PROJECT SHOWCASE</h2>
 
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=sanor07&label=PROFILE%20VIEWS&color=67e8f9&style=flat-square">
-
-<img src="https://img.shields.io/github/followers/sanor07?style=flat-square&label=FOLLOWERS&color=c084fc&labelColor=0b1018">
-
-<img src="https://img.shields.io/github/stars/sanor07?style=flat-square&label=STARS&color=67e8f9&labelColor=0b1018">
-
-</div>
+<p align="center">
+  <sub>Selected projects • experiments • security work</sub>
+</p>
 
 <br>
 
----
+<!-- ReconX -->
 
-<div align="center">
+<p align="center">
+  <img src="./assets/reconx.svg" width="100%">
+</p>
 
-## ◈ SYSTEM STATUS
+<br>
 
-</div>
+<!-- MIOR -->
 
-<table>
-<tr>
+<p align="center">
+  <img src="./assets/mior.svg" width="100%">
+</p>
 
-<td align="center" width="25%">
+<br>
 
-### 🔐 SECURITY
+<!-- Wazuh -->
 
-Detection Engineering
+<p align="center">
+  <img src="./assets/wazuh.svg" width="100%">
+</p>
 
-</td>
+<br>
 
-<td align="center" width="25%">
+<!-- Resume Builder -->
 
-### 🐍 PYTHON
+<p align="center">
+  <img src="./assets/resume-builder.svg" width="100%">
+</p>
 
-Automation & Tools
+<br>
 
-</td>
+<!-- College Portal -->
 
-<td align="center" width="25%">
+<p align="center">
+  <img src="./assets/college-portal.svg" width="100%">
+</p>
 
-### 🛰️ OSINT
+<br>
 
-Intelligence Research
+<!-- Face Attendance -->
 
-</td>
+<p align="center">
+  <img src="./assets/face-attendance.svg" width="100%">
+</p>
 
-<td align="center" width="25%">
+<br>
 
-### 🤖 AI
+<!-- Password Analyzer -->
 
-Local Automation
+<p align="center">
+  <img src="./assets/password-analyzer.svg" width="100%">
+</p>
 
-</td>
+<br>
 
-</tr>
-</table>
+<!-- Email Automation -->
 
----
+<p align="center">
+  <img src="./assets/email-automation.svg" width="100%">
+</p>
 
-<div align="center">
+<br>
 
-<img src="./assets/about.svg" width="100%">
+<!-- Portfolio -->
 
-</div>
-
----
-
-# ◈ CURRENTLY BUILDING
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-### 🔍 ReconX
-
-**OSINT Intelligence Framework**
-
-```text
-STATUS      ████████████████░░░░  80%
-
-STACK
-Python
-CustomTkinter
-OSINT
-APIs
+<p align="center">
+  <img src="./assets/portfolio.svg" width="100%">
+</p>
